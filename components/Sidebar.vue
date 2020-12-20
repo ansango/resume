@@ -92,6 +92,7 @@
         <a
           href="https://github.com/ansango"
           class="shadow-lg my-5 inline-flex items-center justify-center bg-blue-600 hover:bg-blue-500 focus:outline-none focus:border-blue-700 focus:shadow-outline-blue active:bg-blue-700 transition duration-150 ease-in-out w-full py-2 text-white rounded-xl text-base"
+          target="_blank"
         >
           <svg
             role="img"
@@ -108,13 +109,51 @@
           </svg>
           GitHub
         </a>
+        <!--<a
+          class="shadow-lg inline-flex items-center justify-center bg-red-600 hover:bg-red-500 focus:outline-none focus:border-blue-700 focus:shadow-outline-blue active:bg-blue-700 transition duration-150 ease-in-out w-full py-2 text-white rounded-xl text-base cursor-pointer"
+          @click="showModal"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            width="24"
+            height="24"
+            class="mr-1"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+            />
+          </svg>
+          Contact me!
+        </a>-->
       </div>
     </div>
+    <modal v-show="isModalVisible" @close="closeModal" />
   </div>
 </template>
 
 <script>
+import Modal from './Modal.vue'
 export default {
   name: 'Sidebar',
+  components: {
+    Modal,
+  },
+  data() {
+    return { isModalVisible: false }
+  },
+  methods: {
+    showModal() {
+      this.isModalVisible = true
+    },
+    closeModal() {
+      this.isModalVisible = false
+    },
+  },
 }
 </script>

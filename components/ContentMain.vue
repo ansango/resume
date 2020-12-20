@@ -32,10 +32,12 @@
           <div class="mt-1">
             <div>
               <i class="bx bx-buildings" style="color: #666"></i>
-              <small
-                class="text-base text-gray-800 capitalize dark:text-blue-200"
+              <a
+                :href="`${job.href}`"
+                class="text-base text-gray-800 capitalize dark:text-blue-200 hover:underline"
+                target="_blank"
               >
-                {{ job.company }}</small
+                {{ job.company }}</a
               >
             </div>
             <div>
@@ -84,8 +86,12 @@
           <div class="mt-1">
             <div>
               <i class="bx bx-buildings" style="color: #666"></i>
-              <small class="text-base text-gray-800 dark:text-blue-200">
-                {{ study.school }}</small
+              <a
+                :href="`${study.href}`"
+                class="text-base text-gray-800 dark:text-blue-200 hover:underline"
+                target="_blank"
+              >
+                {{ study.school }}</a
               >
             </div>
             <div>
@@ -181,48 +187,48 @@ export default {
             id: 1,
             name: this.$t('jobMetropolis'),
             company: 'metropolis.coop',
-            href: '',
+            href: 'https://www.metropolis.coop/',
             description: this.$t('descriptionMetropolis'),
             start: `${this.$t('september')} - 2020`,
             end: this.$t('now'),
             icons: [
-              { id: 3, name: 'javascript', element: 'js' },
-              { id: 3, name: 'typecript', element: 'typescript' },
+              { id: 1, name: 'javascript', element: 'js' },
+              { id: 2, name: 'typecript', element: 'typescript' },
               { id: 3, name: 'sass', element: 'sass' },
-              { id: 2, name: 'tailwind', element: 'tailwindcss' },
-              { id: 1, name: 'nuxt', element: 'nuxt' },
-              { id: 3, name: 'node', element: 'nodejs' },
-              { id: 3, name: 'mongogit', element: 'mongo' },
-              { id: 3, name: 'git', element: 'git' },
+              { id: 4, name: 'tailwind', element: 'tailwindcss' },
+              { id: 5, name: 'nuxt', element: 'nuxt' },
+              { id: 6, name: 'node', element: 'nodejs' },
+              { id: 7, name: 'mongogit', element: 'mongo' },
+              { id: 8, name: 'git', element: 'git' },
             ],
           },
           {
             id: 2,
             name: this.$t('jobEveris'),
             company: 'everis',
-            href: '',
+            href: 'https://www.iberdrola.es/',
             description: this.$t('descriptionEveris'),
             start: `${this.$t('january')} - 2020`,
             end: this.$t('now'),
             icons: [
-              { id: 3, name: 'html5', element: 'html5' },
-              { id: 3, name: 'css3', element: 'css3' },
+              { id: 1, name: 'html5', element: 'html5' },
+              { id: 2, name: 'css3', element: 'css3' },
               { id: 3, name: 'jquery', element: 'jquery' },
-              { id: 3, name: 'bootstrap', element: 'bootstrap' },
-              { id: 3, name: 'git', element: 'git' },
+              { id: 4, name: 'bootstrap', element: 'bootstrap' },
+              { id: 5, name: 'git', element: 'git' },
             ],
           },
           {
             id: 3,
             name: this.$t('jobYowi'),
             company: 'yowi.tv',
-            href: '',
+            href: 'https://yowi.tv/browser/live',
             description: this.$t('descriptionYowi'),
             start: `${this.$t('march')} - 2018`,
             end: `${this.$t('january')} - 2020`,
             icons: [
-              { id: 3, name: 'vue', element: 'vue' },
-              { id: 3, name: 'bootstrap', element: 'bootstrap' },
+              { id: 1, name: 'vue', element: 'vue' },
+              { id: 2, name: 'bootstrap', element: 'bootstrap' },
               { id: 3, name: 'git', element: 'git' },
             ],
           },
@@ -233,25 +239,29 @@ export default {
           id: 1,
           certificate: this.$t('certificateUOC'),
           school: 'Universitat Oberta de Catalunya',
+          href:
+            'https://estudios.uoc.edu/es/masters-universitarios/desarrollo-sitios-aplicaciones-web/presentacion',
           description: this.$t('descriptionUOC'),
           score: '~',
           start: 2019,
           end: `${this.$t('now')}`,
           icons: [
-            { id: 3, name: 'material', element: 'material' },
-            { id: 3, name: 'figma', element: 'figma' },
+            { id: 1, name: 'material', element: 'material' },
+            { id: 2, name: 'figma', element: 'figma' },
             { id: 3, name: 'javascript', element: 'js' },
-            { id: 3, name: 'typescript', element: 'typescript' },
-            { id: 3, name: 'parcel', element: 'parcel' },
-            { id: 2, name: 'tailwind', element: 'tailwindcss' },
-            { id: 3, name: 'angular', element: 'angular' },
-            { id: 2, name: 'laravel', element: 'laravel' },
+            { id: 4, name: 'typescript', element: 'typescript' },
+            { id: 5, name: 'parcel', element: 'parcel' },
+            { id: 6, name: 'tailwind', element: 'tailwindcss' },
+            { id: 7, name: 'angular', element: 'angular' },
+            { id: 8, name: 'laravel', element: 'laravel' },
           ],
         },
         {
           id: 2,
           certificate: this.$t('certificateIlerna'),
           school: 'Ilerna FP Online',
+          href:
+            'https://www.ilerna.es/es/ciclo-grado-superior-desarrollo-aplicaciones-multiplataforma-39',
           description: this.$t('descriptionIlerna'),
           score: '8.83 / 10',
           start: 2016,
@@ -267,6 +277,7 @@ export default {
           id: 3,
           certificate: this.$t('certificateUSAL'),
           school: this.$t('USAL'),
+          href: 'https://www.usal.es/grado-en-derecho',
           description: this.$t('descriptionUSAL'),
           score: '7.2 / 10',
           start: 2007,
