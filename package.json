@@ -12,7 +12,6 @@
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.12.2",
-    "@nuxtjs/pwa": "^3.0.2",
     "core-js": "^3.6.5",
     "nuxt": "^2.14.6",
     "nuxt-i18n": "^6.16.0",
@@ -24,6 +23,7 @@
     "@nuxtjs/eslint-config": "^3.1.0",
     "@nuxtjs/eslint-module": "^2.0.0",
     "@nuxtjs/html-validator": "^0.1.5",
+    "@nuxtjs/pwa": "^3.3.3",
     "@nuxtjs/tailwindcss": "^3.4.1",
     "@tailwindcss/postcss7-compat": "^2.0.2",
     "autoprefixer": "^9.8.6",
