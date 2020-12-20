@@ -149,7 +149,7 @@
         <li
           v-for="skill in skills"
           :key="skill.id"
-          :class="`flex items-center mr-2 my-1 shadow-md rounded-full bg-${skill.color}-200 px-4 text-sm py-2 font-medium text-${skill.color}-800 transform hover:scale-110 motion-reduce:transform-none`"
+          :class="`flex items-center mr-2 my-1 shadow-md rounded-full bg-yellow-200 px-4 text-sm py-2 font-medium text-${skill.color}-800 transform hover:scale-110 motion-reduce:transform-none`"
         >
           <img
             style="user-drag: none"
