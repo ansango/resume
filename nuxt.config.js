@@ -1,5 +1,6 @@
 import i18n from './lang/i18n'
 export default {
+  target: 'static',
   head: {
     title: 'Aníbal Santos',
     meta: [
@@ -24,7 +25,7 @@ export default {
     '@nuxtjs/html-validator',
     '@aceforth/nuxt-optimized-images',
   ],
-  modules: ['@nuxtjs/axios', '@nuxtjs/pwa', 'nuxt-i18n', 'nuxt-precompress'],
+  modules: ['@nuxtjs/axios', 'nuxt-i18n', 'nuxt-precompress', '@nuxtjs/pwa'],
   htmlValidator: {
     usePrettier: false,
     options: {
