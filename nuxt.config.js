@@ -25,7 +25,7 @@ export default {
     '@nuxtjs/html-validator',
     '@aceforth/nuxt-optimized-images',
   ],
-  modules: ['@nuxtjs/axios', 'nuxt-i18n', 'nuxt-precompress', '@nuxtjs/pwa'],
+  modules: ['@nuxtjs/axios', 'nuxt-i18n', 'nuxt-precompress'],
   htmlValidator: {
     usePrettier: false,
     options: {
