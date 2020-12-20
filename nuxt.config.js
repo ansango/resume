@@ -25,29 +25,7 @@ export default {
     '@nuxtjs/html-validator',
     '@aceforth/nuxt-optimized-images',
   ],
-  modules: ['@nuxtjs/axios', 'nuxt-i18n', 'nuxt-precompress'],
-  htmlValidator: {
-    usePrettier: false,
-    options: {
-      extends: [
-        'html-validate:document',
-        'html-validate:recommended',
-        'html-validate:standard',
-      ],
-      rules: {
-        'svg-focusable': 'off',
-        'no-unknown-elements': 'error',
-        // Conflicts or not needed when using prettier formatting
-        'void-style': 'off',
-        'no-trailing-whitespace': 'off',
-        // Conflict with Nuxt defaults
-        'require-sri': 'off',
-        'attribute-boolean-style': 'off',
-        // Unreasonable rule
-        'no-inline-style': 'off',
-      },
-    },
-  },
+  modules: ['@nuxtjs/axios', 'nuxt-i18n', 'nuxt-precompress', '@nuxtjs/pwa'],
   optimizedImages: {
     optimizeImages: true,
   },
