@@ -5,6 +5,7 @@
   "summaryText": "Creative and self-starting Frontend Developer with 3 years experience websites and apps in fast-paced, collaborative environments. Passionate about usability and possess working knowledge of Javascript & CSS Frameworks.",
   "experienceTitle": "experience",
   "educationTitle": "education",
+  "skillsTitle": "skills",
   "languagesTitle": "languages",
   "jobMetropolis": "frontend developer with frameworks",
   "jobEveris": "frontend developer",
@@ -13,14 +14,14 @@
   "january": "january",
   "march": "march",
   "now": "now",
-  "descriptionMetropolis": "Frontend developer for professional projects. Technology Stack: Nuxt js, Vue js, Javascript ES6, Typescript, Sass, Node, Express, Mongodb, Bulma, Tailwind, Git.",
+  "descriptionMetropolis": "Solution development for commercial projects. Requirement analysis of digital products. Architectural implementation and Full Stack development oriented to Frontend. Study and improvement of website performance.",
   "descriptionEveris": "Frontend Developer in the Iberdrola Commercial Web project.  Adaptation of responsive designs. JavaScript functionality. Adaptation for Google Tag Manager. Publication and version control. Web application maintenance. Customer support management",
-  "descriptionYowi": "Desarrollo web front-end con Nuxt Js, Vue Js, Vuetify, Javascript, Bootstrap 4 (Bootstrap Vue), CSS3, Node JS, Express, MongoDB, Mongoose, npm, Nuxt, Vue Cli, Git y Git flow.",
+  "descriptionYowi": "Implementation and development of designs for the broadcast platform Yowi.tv. Generic layout structures, components, translation system.",
   "certificateUOC": "Master's Degree in Web Development",
   "certificateIlerna": "HNC in Application Development",
   "certificateUSAL": "Law Degree",
   "USAL": "Salamanca University",
-  "descriptionUOC": "Lorem ipsum dolor sit amet consectetur adipiscing elit ultrices, ornare purus interdum phasellus pretium fusce dui, cursus tristique justo facilisis erat posuere massa. Imperdiet aliquam magna dis tincidunt lobortis ultricies dictum nisi turpis, venenatis iaculis suscipit feugiat quisque nostra consequat auctor tellus, varius accumsan mauris eu condimentum aliquet vivamus hendrerit.",
-  "descriptionIlerna": "Lorem ipsum dolor sit amet consectetur adipiscing elit ultrices, ornare purus interdum phasellus pretium fusce dui, cursus tristique justo facilisis erat posuere massa. Imperdiet aliquam magna dis tincidunt lobortis ultricies dictum nisi turpis, venenatis iaculis suscipit feugiat quisque nostra consequat auctor tellus, varius accumsan mauris eu condimentum aliquet vivamus hendrerit.",
-  "descriptionUSAL": "Lorem ipsum dolor sit amet consectetur adipiscing elit ultrices, ornare purus interdum phasellus pretium fusce dui, cursus tristique justo facilisis erat posuere massa. Imperdiet aliquam magna dis tincidunt lobortis ultricies dictum nisi turpis, venenatis iaculis suscipit feugiat quisque nostra consequat auctor tellus, varius accumsan mauris eu condimentum aliquet vivamus hendrerit."
+  "descriptionUOC": "Studies structured in three main areas: Fundamentals of web design and layouts (HTML and CSS and interface design), Web development (JavaScript development, front-end development and back-end development) and Tools for design and development.",
+  "descriptionIlerna": "Development of cross-platform applications with access to databases using languages, libraries and tools appropriate to the specifications. Development of graphic user interfaces, with visual components.",
+  "descriptionUSAL": "Training on the concepts of the Science of Law, and a theoretical and practical knowledge of the structure of the national, community and international legal order, and in particular of the normative contents of the different branches of law."
 }

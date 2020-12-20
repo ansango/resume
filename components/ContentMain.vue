@@ -2,17 +2,19 @@
   <div class="">
     <div class="mx-4 mb-6">
       <h2
-        class="mb-4 text-4xl text-gray-700 dark:text-gray-100 font-bold capitalize"
+        class="mb-4 text-4xl text-gray-700 font-bold capitalize dark:text-blue-200"
       >
         {{ $t('summaryTitle') }}
       </h2>
-      <p class="text-lg shadow-lg rounded-lg p-10 dark:text-gray-100">
+      <p
+        class="text-lg shadow-lg rounded-lg p-10 dark:bg-gray-800 dark:text-blue-200"
+      >
         {{ $t('summaryText') }}
       </p>
     </div>
     <div class="mx-4 opacity-100">
       <h2
-        class="mb-4 text-4xl text-gray-700 dark:text-gray-100 font-bold capitalize"
+        class="mb-4 text-4xl text-gray-700 dark:text-blue-200 font-bold capitalize"
       >
         {{ $t('experienceTitle') }}
       </h2>
@@ -20,10 +22,10 @@
         <li
           v-for="job in experience.jobs"
           :key="job.id"
-          class="shadow-lg rounded-lg p-10 my-6"
+          class="shadow-lg rounded-lg p-10 my-6 dark:bg-gray-800"
         >
           <h3
-            class="text-2xl font-medium text-gray-800 dark:text-gray-100 capitalize"
+            class="text-2xl font-medium text-gray-800 dark:text-blue-200 capitalize"
           >
             {{ job.name }}
           </h3>
@@ -31,20 +33,20 @@
             <div>
               <i class="bx bx-buildings" style="color: #666"></i>
               <small
-                class="text-base text-gray-800 capitalize dark:text-gray-100"
+                class="text-base text-gray-800 capitalize dark:text-blue-200"
               >
                 {{ job.company }}</small
               >
             </div>
             <div>
               <i class="bx bx-calendar text-sm" style="color: #666"></i>
-              <small class="text-sm text-gray-600 dark:text-gray-300"
+              <small class="text-sm text-gray-600 dark:text-blue-200 italic"
                 >{{ job.start }} - {{ job.end }}</small
               >
             </div>
             <div>
               <i class="bx bx-calendar text-sm" style="color: #666"></i>
-              <small class="text-sm text-gray-800 dark:text-gray-100"
+              <small class="text-sm text-gray-800 dark:text-blue-200"
                 >{{ job.description }}
               </small>
             </div>
@@ -64,7 +66,7 @@
     </div>
     <div class="mx-4">
       <h2
-        class="mb-4 text-4xl text-gray-700 font-bold capitalize dark:text-gray-100"
+        class="mb-4 text-4xl text-gray-700 font-bold capitalize dark:text-blue-200"
       >
         {{ $t('educationTitle') }}
       </h2>
@@ -72,34 +74,34 @@
         <li
           v-for="study in education"
           :key="study.id"
-          class="shadow-lg rounded-lg p-10 my-6"
+          class="shadow-lg rounded-lg p-10 my-6 dark:bg-gray-800"
         >
           <h3
-            class="text-2xl font-medium text-gray-800 capitalize dark:text-gray-100"
+            class="text-2xl font-medium text-gray-800 capitalize dark:text-blue-200"
           >
             {{ study.certificate }}
           </h3>
           <div class="mt-1">
             <div>
               <i class="bx bx-buildings" style="color: #666"></i>
-              <small class="text-base text-gray-800 dark:text-gray-100">
+              <small class="text-base text-gray-800 dark:text-blue-200">
                 {{ study.school }}</small
               >
             </div>
             <div>
               <i class="bx bx-calendar text-sm" style="color: #666"></i>
-              <small class="text-sm text-gray-600 dark:text-gray-300"
+              <small class="text-sm text-gray-600 dark:text-blue-200 italic"
                 >{{ study.start }} - {{ study.end }}</small
               >
             </div>
             <div>
               <i class="bx bx-calendar text-sm" style="color: #666"></i>
-              <small class="text-sm text-gray-800 dark:text-gray-100"
+              <small class="text-sm text-gray-800 dark:text-blue-200"
                 >{{ study.description }}
               </small>
             </div>
             <p
-              class="flex text-md font-medium text-gray-800 dark:text-gray-100 capitalize mt-2"
+              class="flex text-md font-medium text-gray-800 dark:text-blue-200 capitalize mt-2"
             >
               <svg
                 class="mr-2"
@@ -143,13 +145,17 @@
       </ul>
     </div>
     <div class="mx-4">
-      <h2 class="mb-4 text-4xl text-gray-700 font-bold">Skills</h2>
+      <h2
+        class="mb-4 text-4xl text-gray-700 font-bold dark:text-blue-200 capitalize"
+      >
+        {{ $t('skillsTitle') }}
+      </h2>
 
       <ul class="mb-6 flex flex-wrap">
         <li
           v-for="skill in skills"
           :key="skill.id"
-          :class="`flex items-center mr-2 my-1 shadow-md rounded-full bg-yellow-200 px-4 text-sm py-2 font-medium text-${skill.color}-800 transform hover:scale-110 motion-reduce:transform-none`"
+          class="flex items-center mr-2 my-1 shadow-md rounded-full bg-blue-100 px-4 text-sm py-2 font-medium text-blue-800 transform hover:scale-110 motion-reduce:transform-none dark:bg-blue-200"
         >
           <img
             style="user-drag: none"
@@ -247,7 +253,7 @@ export default {
           certificate: this.$t('certificateIlerna'),
           school: 'Ilerna FP Online',
           description: this.$t('descriptionIlerna'),
-          score: '8.83/10',
+          score: '8.83 / 10',
           start: 2016,
           end: 2018,
           icons: [
@@ -262,7 +268,7 @@ export default {
           certificate: this.$t('certificateUSAL'),
           school: this.$t('USAL'),
           description: this.$t('descriptionUSAL'),
-          score: '7.2/10',
+          score: '7.2 / 10',
           start: 2007,
           end: 2012,
           icons: [{ id: 1, name: 'law', element: 'law' }],

@@ -3,27 +3,38 @@
     <div class="md:mt-52 md:fixed">
       <div class="md:block">
         <img
+          v-if="$colorMode.preference === 'light'"
           style="user-drag: none"
           class="shadow-xl h-32 w-32 rounded-full mx-auto mx-4"
           src="~/assets/img/me.jpeg"
           alt="me"
         />
+        <img
+          v-if="$colorMode.preference === 'dark'"
+          style="user-drag: none"
+          class="shadow-xl h-32 w-32 rounded-full mx-auto mx-4"
+          src="~/assets/img/me_dark.jpg"
+          alt="me"
+        />
         <div class="mb-12 text-center mt-4 justify-center items-center">
           <h1
-            class="text-2xl text-xl text-gray-800 font-bold dark:text-gray-100"
+            class="text-2xl text-xl text-gray-800 font-bold dark:text-blue-100"
           >
             Aníbal Santos
           </h1>
-          <div class="md:text-lg text-gray-600 dark:text-gray-100">
+          <div class="md:text-lg text-gray-600 dark:text-blue-100">
             Frontend Developer
           </div>
-          <div class="text-gray-600 md:hidden mt-1">
+          <a
+            href="mailto:anibalsantosgo@gmail.com"
+            class="text-gray-600 md:hidden mt-1 dark:text-blue-100"
+          >
             anibalsantosgo@gmail.com
-          </div>
+          </a>
         </div>
       </div>
       <div class="mx-7 hidden md:block">
-        <div class="my-2 text-gray-600 flex dark:text-gray-100">
+        <div class="my-2 text-gray-600 flex dark:text-blue-100">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -42,7 +53,7 @@
           </svg>
           <a href="mailto:anibalsantosgo@gmail.com">anibalsantosgo@gmail.com</a>
         </div>
-        <div class="my-2 text-gray-600 flex dark:text-gray-100">
+        <div class="my-2 text-gray-600 flex dark:text-blue-100">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -63,7 +74,7 @@
             Salamanca, <span class="capitalize">{{ $t('spain') }}</span>
           </p>
         </div>
-        <div class="my-2 text-gray-600 flex dark:text-gray-100">
+        <div class="my-2 text-gray-600 flex dark:text-blue-200">
           <svg
             class="mr-1"
             xmlns="http://www.w3.org/2000/svg"
@@ -107,5 +118,3 @@ export default {
   name: 'Sidebar',
 }
 </script>
-
-<style></style>

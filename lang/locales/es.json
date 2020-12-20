@@ -5,6 +5,7 @@
   "summaryText": "Creativo y con iniciativa propia, Desarrollador Frontend con 3 años de experiencia en sitios web y aplicaciones en entornos de colaboración de rápido crecimiento. Apasionado por la usabilidad y con conocimientos sobre Frameworks de Javascript y CSS.",
   "experienceTitle": "experiencia",
   "educationTitle": "educación",
+  "skillsTitle": "competencias",
   "languagesTitle": "idiomas",
   "jobMetropolis": "desarollador frontend con frameworks",
   "jobEveris": "desarollador frontend",
@@ -20,7 +21,7 @@
   "certificateIlerna": "CGSF Desarrollo de Aplicaciones Multiplataforma",
   "certificateUSAL": "Licenciatura en Derecho",
   "USAL": "Universidad de Salamanca",
-  "descriptionUOC": "Lorem ipsum dolor sit amet consectetur adipiscing elit ultrices, ornare purus interdum phasellus pretium fusce dui, cursus tristique justo facilisis erat posuere massa. Imperdiet aliquam magna dis tincidunt lobortis ultricies dictum nisi turpis, venenatis iaculis suscipit feugiat quisque nostra consequat auctor tellus, varius accumsan mauris eu condimentum aliquet vivamus hendrerit.",
-  "descriptionIlerna": "Lorem ipsum dolor sit amet consectetur adipiscing elit ultrices, ornare purus interdum phasellus pretium fusce dui, cursus tristique justo facilisis erat posuere massa. Imperdiet aliquam magna dis tincidunt lobortis ultricies dictum nisi turpis, venenatis iaculis suscipit feugiat quisque nostra consequat auctor tellus, varius accumsan mauris eu condimentum aliquet vivamus hendrerit.",
-  "descriptionUSAL": "Lorem ipsum dolor sit amet consectetur adipiscing elit ultrices, ornare purus interdum phasellus pretium fusce dui, cursus tristique justo facilisis erat posuere massa. Imperdiet aliquam magna dis tincidunt lobortis ultricies dictum nisi turpis, venenatis iaculis suscipit feugiat quisque nostra consequat auctor tellus, varius accumsan mauris eu condimentum aliquet vivamus hendrerit."
+  "descriptionUOC": "Estudios estructurados en tres grandes ámbitos: Fundamentos de diseño web y maquetación (HTML y CSS y diseño de interfaces), Desarrollo web (programación en JavaScript, desarrollo front-end y desarrollo back-end) y Herramientas para el diseño y el desarrollo.",
+  "descriptionIlerna": "Desarrollo de aplicaciones multiplataforma con acceso a bases de datos utilizando lenguajes, librerías y herramientas adecuados a las especificaciones. Desarrollo de interfaces gráficos de usuario, con componentes visuales.",
+  "descriptionUSAL": "Formación sobre los conceptos de la Ciencia del Derecho, y un conocimiento teórico y práctico de la estructura del ordenamiento jurídico nacional, comunitario e internacional, y, en particular de los contenidos normativos de las distintas ramas del Derecho."
 }

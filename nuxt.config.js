@@ -1,7 +1,7 @@
 import i18n from './lang/i18n'
 export default {
   head: {
-    title: 'ansan-resume',
+    title: 'Aníbal Santos',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },

@@ -10,6 +10,7 @@
 <script>
 import Sidebar from '~/components/Sidebar.vue'
 import ContentMain from '~/components/ContentMain.vue'
+
 export default {
   components: {
     Sidebar,
