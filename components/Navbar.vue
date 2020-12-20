@@ -34,7 +34,7 @@
           />
         </svg>
         <svg
-          v-if="$colorMode.preference === 'dark'"
+          v-else
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
           width="24"
@@ -64,6 +64,9 @@ export default {
     }
   },
   computed: {
+    setThemeDefault() {
+      return this.$colorMode.preference === 'dark'
+    },
     availableLocales() {
       return this.$i18n.locales.filter((i) => i.code !== this.$i18n.locale)
     },

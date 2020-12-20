@@ -10,7 +10,7 @@
           alt="me"
         />
         <img
-          v-if="$colorMode.preference === 'dark'"
+          v-else
           style="user-drag: none"
           class="shadow-xl h-32 w-32 rounded-full mx-auto mx-4"
           src="~/assets/img/me_dark.jpg"
