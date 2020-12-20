@@ -1,8 +1,6 @@
 <template>
   <div class="">
-    <nav
-      class="w-full flex justify-end text-gray-600 bg-white dark:bg-gray-900 p-2"
-    >
+    <nav class="w-full flex justify-end text-gray-600 bg-transparent p-2">
       <nuxt-link
         v-for="locale in availableLocales"
         :key="locale.code"
