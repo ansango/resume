@@ -64,16 +64,13 @@ export default {
       return this.$i18n.locales.filter((i) => i.code !== this.$i18n.locale)
     },
   },
+  beforeCreate() {
+    this.reload()
+  },
   methods: {
     toggle() {
       this.$colorMode.preference =
         this.$colorMode.preference === 'light' ? 'dark' : 'light'
-      this.$ga.event({
-        eventCategory: 'language',
-        eventAction: 'toggle',
-        eventLabel: 'switch-language',
-        eventValue: 1,
-      })
     },
     reload() {
       location.reload()
