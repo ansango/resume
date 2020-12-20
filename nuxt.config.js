@@ -22,7 +22,6 @@ export default {
     '@nuxtjs/tailwindcss',
     '@nuxtjs/color-mode',
     '@nuxtjs/html-validator',
-    '@nuxtjs/google-analytics',
     '@aceforth/nuxt-optimized-images',
   ],
   modules: ['@nuxtjs/axios', '@nuxtjs/pwa', 'nuxt-i18n', 'nuxt-precompress'],
@@ -52,26 +51,6 @@ export default {
     optimizeImages: true,
   },
   axios: {},
-  googleAnalytics: {
-    id: 'UA-185847456-1',
-    checkDuplicatedScript: true,
-    dev: true,
-    autoTracking: {
-      screenview: true,
-      pageviewTemplate(route) {
-        return {
-          page: route.path,
-          title: document.title,
-          location: window.location.href,
-        }
-      },
-    },
-    skipSamePath: true,
-    debug: {
-      enabled: false,
-      sendHitTask: false,
-    },
-  },
   i18n: {
     vueI18nLoader: true,
     detectBrowserLanguage: {
