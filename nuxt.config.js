@@ -22,7 +22,6 @@ export default {
     '@nuxtjs/eslint-module',
     '@nuxtjs/tailwindcss',
     '@nuxtjs/color-mode',
-    '@nuxtjs/html-validator',
     '@aceforth/nuxt-optimized-images',
   ],
   modules: ['@nuxtjs/axios', 'nuxt-i18n', 'nuxt-precompress', '@nuxtjs/pwa'],
