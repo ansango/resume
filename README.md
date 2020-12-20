@@ -14,7 +14,7 @@ width="50%"
 
 Feel free to fork and reuse the project.
 
-## Build Setup
+### Build Setup
 
 ```bash
 # install dependencies
