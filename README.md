@@ -12,7 +12,7 @@ width="50%"
      style="float: left; margin-right: 10px;" />
 <br/>
 
-Feel free to fork and reuse the project.
+Feel free to fork and reuse this project.
 
 ### Build Setup
 
