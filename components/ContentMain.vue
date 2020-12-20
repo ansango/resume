@@ -49,11 +49,11 @@
               </small>
             </div>
           </div>
-          <div class="flex justify-end items-center">
+          <div class="flex items-center mt-2">
             <div v-for="icon in job.icons" :key="icon.name" class="mr-2 mt-3">
               <img
                 style="user-drag: none"
-                class="w-10 y-10"
+                class="w-7 y-7"
                 :src="require(`~/assets/img/icons/${icon.element}.svg`)"
                 :alt="`${icon.name}`"
               />
@@ -124,7 +124,7 @@
                 /></svg
               ><span>{{ study.score }}</span>
             </p>
-            <div class="flex justify-end items-center">
+            <div class="flex items-center mt-2">
               <div
                 v-for="icon in study.icons"
                 :key="icon.name"
@@ -132,7 +132,7 @@
               >
                 <img
                   style="user-drag: none"
-                  class="w-10 h-10 select-none"
+                  class="w-7 h-7 select-none"
                   :src="require(`~/assets/img/icons/${icon.element}.svg`)"
                   :alt="`${icon.name}`"
                 />

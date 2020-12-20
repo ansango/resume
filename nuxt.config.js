@@ -68,8 +68,8 @@ export default {
     },
     skipSamePath: true,
     debug: {
-      enabled: true,
-      sendHitTask: true,
+      enabled: false,
+      sendHitTask: false,
     },
   },
   i18n: {
@@ -84,12 +84,12 @@ export default {
       {
         code: 'en',
         name: 'English',
-        icon: '🇺🇲',
+        icon: 'eeuu.svg',
       },
       {
         code: 'es',
         name: 'Español',
-        icon: '🇪🇸',
+        icon: 'spain.svg',
       },
     ],
     vueI18n: i18n,

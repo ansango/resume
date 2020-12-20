@@ -7,12 +7,17 @@
         v-for="locale in availableLocales"
         :key="locale.code"
         :to="switchLocalePath(locale.code)"
-        class="px-4 py-3 mt-2 text-sm font-semibold bg-transparent rounded-lg md:mt-0 md:ml-4 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+        class="px-4 py-3 mt-2 text-sm font-semibold bg-transparent focus:outline-none focus:shadow-outline dark:text-gray-100"
         @click="reload"
-        >{{ `${locale.code}` }}</nuxt-link
       >
+        <img
+          class="w-10 h-10"
+          :src="require(`~/assets/img/icons/${locale.icon}`)"
+          :alt="`${locale.code}`"
+        />
+      </nuxt-link>
       <a
-        class="flex flex-row items-center px-4 py-2 mt-2 text-sm font-semibold text-left bg-transparent rounded-lg md:w-auto md:inline md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline cursor-pointer"
+        class="flex flex-row items-center px-4 py-2 mt-2 bg-transparent focus:outline-none focus:shadow-outline cursor-pointer dark:text-gray-100"
         @click="toggle"
       >
         <svg
