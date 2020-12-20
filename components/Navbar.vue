@@ -1,12 +1,11 @@
 <template>
-  <div class="">
+  <div v-if="renderComponent">
     <nav class="w-full flex justify-end text-gray-600 bg-transparent p-2">
       <nuxt-link
         v-for="locale in availableLocales"
         :key="locale.code"
         :to="switchLocalePath(locale.code)"
         class="px-4 py-3 mt-2 text-sm font-semibold bg-transparent focus:outline-none focus:shadow-outline dark:text-gray-100"
-        @click="reload"
       >
         <img
           class="w-10 h-10"
@@ -59,21 +58,29 @@
 <script>
 export default {
   name: 'Navbar',
+  data() {
+    return {
+      renderComponent: true,
+    }
+  },
   computed: {
     availableLocales() {
       return this.$i18n.locales.filter((i) => i.code !== this.$i18n.locale)
     },
-  },
-  beforeCreate() {
-    this.reload()
   },
   methods: {
     toggle() {
       this.$colorMode.preference =
         this.$colorMode.preference === 'light' ? 'dark' : 'light'
     },
-    reload() {
-      location.reload()
+    forceRerender() {
+      // Remove my-component from the DOM
+      this.renderComponent = false
+
+      this.$nextTick(() => {
+        // Add the component back in
+        this.renderComponent = true
+      })
     },
   },
 }
