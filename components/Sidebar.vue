@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="md:fixed md:mt-52">
+    <div class="md:mt-52">
       <div class="md:block">
         <img
           style="user-drag: none"
