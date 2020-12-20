@@ -1,6 +1,5 @@
 import i18n from './lang/i18n'
 export default {
-  mode: 'universal',
   head: {
     title: 'ansan-resume',
     meta: [
@@ -24,8 +23,9 @@ export default {
     '@nuxtjs/color-mode',
     '@nuxtjs/html-validator',
     '@nuxtjs/google-analytics',
+    '@aceforth/nuxt-optimized-images',
   ],
-
+  modules: ['@nuxtjs/axios', '@nuxtjs/pwa', 'nuxt-i18n', 'nuxt-precompress'],
   htmlValidator: {
     usePrettier: false,
     options: {
@@ -48,8 +48,9 @@ export default {
       },
     },
   },
-
-  modules: ['@nuxtjs/axios', '@nuxtjs/pwa', 'nuxt-i18n', 'nuxt-precompress'],
+  optimizedImages: {
+    optimizeImages: true,
+  },
   axios: {},
   googleAnalytics: {
     id: 'UA-185847456-1',
