@@ -6,6 +6,7 @@
           style="user-drag: none"
           class="shadow-xl h-32 w-32 rounded-full mx-auto mx-4"
           src="~/assets/img/me.jpeg"
+          alt="me"
         />
         <div class="mb-12 text-center mt-4 justify-center items-center">
           <h1

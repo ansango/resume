@@ -11,7 +11,7 @@
         @click="reload"
         >{{ `${locale.code}` }}</nuxt-link
       >
-      <button
+      <a
         class="flex flex-row items-center px-4 py-2 mt-2 text-sm font-semibold text-left bg-transparent rounded-lg md:w-auto md:inline md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
         @click="toggle"
       >
@@ -47,7 +47,8 @@
             d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"
           />
         </svg>
-      </button>
+        <span class="hidden">dark theme</span>
+      </a>
     </nav>
   </div>
 </template>

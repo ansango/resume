@@ -1,8 +1,5 @@
 <template>
   <div class="">
-    <svg class="animate-spin h-5 w-5 mr-3 ..." viewBox="0 0 24 24">
-      <!-- ... -->
-    </svg>
     <div class="mx-4 mb-6">
       <h2
         class="mb-4 text-4xl text-gray-700 dark:text-gray-100 font-bold capitalize"
@@ -15,7 +12,7 @@
     </div>
     <div class="mx-4 opacity-100">
       <h2
-        class="mb-4 text-4xl text-gray-700 dark:text-gray-100 dark:text-gray-100 font-bold capitalize"
+        class="mb-4 text-4xl text-gray-700 dark:text-gray-100 font-bold capitalize"
       >
         {{ $t('experienceTitle') }}
       </h2>
