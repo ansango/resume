@@ -34,6 +34,7 @@
               <i class="bx bx-buildings" style="color: #666"></i>
               <a
                 :href="`${job.href}`"
+                rel="noreferrer"
                 class="text-base text-gray-800 capitalize dark:text-blue-200 hover:underline"
                 target="_blank"
               >
@@ -88,6 +89,7 @@
               <i class="bx bx-buildings" style="color: #666"></i>
               <a
                 :href="`${study.href}`"
+                rel="noreferrer"
                 class="text-base text-gray-800 dark:text-blue-200 hover:underline"
                 target="_blank"
               >

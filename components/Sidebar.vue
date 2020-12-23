@@ -91,6 +91,7 @@
         </div>
         <a
           href="https://github.com/ansango"
+          rel="noreferrer"
           class="shadow-lg my-5 inline-flex items-center justify-center bg-blue-600 hover:bg-blue-500 focus:outline-none focus:border-blue-700 focus:shadow-outline-blue active:bg-blue-700 transition duration-150 ease-in-out w-full py-2 text-white rounded-xl text-base"
           target="_blank"
         >
@@ -109,7 +110,7 @@
           </svg>
           GitHub
         </a>
-        <!--<a
+        <!-- <a
           class="shadow-lg inline-flex items-center justify-center bg-red-600 hover:bg-red-500 focus:outline-none focus:border-blue-700 focus:shadow-outline-blue active:bg-blue-700 transition duration-150 ease-in-out w-full py-2 text-white rounded-xl text-base cursor-pointer"
           @click="showModal"
         >
