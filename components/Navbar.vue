@@ -1,5 +1,5 @@
 <template>
-  <div v-if="renderComponent">
+  <div>
     <nav class="w-full flex justify-end text-gray-600 bg-transparent p-2">
       <nuxt-link
         v-for="locale in availableLocales"
@@ -58,15 +58,7 @@
 <script>
 export default {
   name: 'Navbar',
-  data() {
-    return {
-      renderComponent: true,
-    }
-  },
   computed: {
-    setThemeDefault() {
-      return this.$colorMode.preference === 'dark'
-    },
     availableLocales() {
       return this.$i18n.locales.filter((i) => i.code !== this.$i18n.locale)
     },
@@ -75,15 +67,6 @@ export default {
     toggle() {
       this.$colorMode.preference =
         this.$colorMode.preference === 'light' ? 'dark' : 'light'
-    },
-    forceRerender() {
-      // Remove my-component from the DOM
-      this.renderComponent = false
-
-      this.$nextTick(() => {
-        // Add the component back in
-        this.renderComponent = true
-      })
     },
   },
 }
